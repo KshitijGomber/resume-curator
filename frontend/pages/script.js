@@ -22,10 +22,11 @@ document.getElementById("submitBtn").addEventListener("click", async function() 
     outputContainer.classList.add("d-none");
 
     // Send POST request to FastAPI
-    const response = await fetch("http://127.0.0.1:5438/upload", {
+    const response = await fetch("http://127.0.0.1:5438/upload", {  // ✅ Added /upload
       method: "POST",
       body: formData
     });
+    
     if (!response.ok) throw new Error("Server error");
 
     // Parse JSON

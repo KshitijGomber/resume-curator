@@ -5,8 +5,6 @@ import os
 from dotenv import load_dotenv
 from resume_parser import extract_text
 
-
-
 # Load API Key from .env file
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
