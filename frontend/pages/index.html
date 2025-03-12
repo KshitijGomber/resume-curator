@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Curator</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library CSS (for animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- marked.js for parsing Markdown -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js"
+      defer
+    ></script>
+
+    <!-- Main Script -->
+    <script defer src="script.js"></script>
+  </head>
+  <body style="font-family: 'Josefin Sans', sans-serif;">
+    <!-- ========== NAVBAR START ========== -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
+      <div class="container-fluid px-5">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand fw-bold fs-2 text-primary" href="#">
+          Resume Curator
+        </a>
+        <button
+          class="navbar-toggler nav-menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#optimizer">Optimize Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== NAVBAR END ========== -->
+
+    <!-- ========== HERO SECTION START ========== -->
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="container" data-aos="fade-up">
+        <h1 class="display-4 fw-bold text-primary">
+          Streamline Your Resume with AI
+        </h1>
+        <p class="mt-3 text-secondary fs-5">
+          Upload your resume, paste the job description, and let our
+          AI-driven algorithm instantly optimize your resume for better
+          ATS results.
+        </p>
+        <a
+          href="#optimizer"
+          class="btn btn-primary mt-3 py-3 px-5 rounded-pill"
+          style="font-size:1.2rem;"
+        >
+          Get Started
+        </a>
+      </div>
+    </section>
+    <!-- ========== HERO SECTION END ========== -->
+
+    <!-- ========== FEATURES SECTION START ========== -->
+    <section id="features" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <small class="text-primary" style="font-size:1.5rem;">Features</small>
+          <h2 class="fw-bold mt-2" style="color:#3f396d;">
+            Why Use Our Resume Curator?
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card border-0 shadow p-4 text-center h-100">
+              <i class="bi bi-robot fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">AI-Powered Suggestions</h5>
+              <p class="text-muted">
+                Our model uses Gemini to highlight missing skills and keywords
+                directly from your job description.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card border-0 shadow p-4 text-center h-100">
+              <i class="bi bi-funnel-fill fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">ATS Optimization</h5>
+              <p class="text-muted">
+                Receive a tailored resume that passes applicant tracking
+                systems, using relevant keywords recruiters look for.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card border-0 shadow p-4 text-center h-100">
+              <i class="bi bi-speedometer2 fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Instant Feedback</h5>
+              <p class="text-muted">
+                Submit your resume and job description, then see real-time
+                suggestions on how to stand out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== FEATURES SECTION END ========== -->
+
+    <!-- ========== OPTIMIZER SECTION START ========== -->
+    <section id="optimizer" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <small class="text-primary" style="font-size:1.5rem;"
+            >Resume Optimization</small
+          >
+          <h2 class="fw-bold mt-2" style="color:#3f396d;">
+            Optimize Your Resume
+          </h2>
+          <p class="text-muted mx-auto" style="max-width:600px;">
+            Upload your existing resume (PDF or DOCX), paste your target job
+            description, and let our AI do the rest. We'll provide you with a
+            refined, tailored resume instantly.
+          </p>
+        </div>
+
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-3" style="color: #3f396d;">Resume Uploader</h4>
+                <p class="text-muted" style="font-size: 0.95rem;">
+                  Only PDF or DOCX formats are accepted.
+                </p>
+
+                <!-- File Upload -->
+                <div class="mb-3">
+                  <label for="resumeUpload" class="form-label fw-semibold">
+                    Upload Resume
+                  </label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="resumeUpload"
+                    accept=".pdf, .docx"
+                  />
+                </div>
+
+                <!-- Job Description -->
+                <div class="mb-3">
+                  <label for="jobDesc" class="form-label fw-semibold">
+                    Job Description
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="jobDesc"
+                    rows="5"
+                    placeholder="Paste the job description here..."
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  id="submitBtn"
+                  class="btn btn-primary w-100 fw-bold py-2 rounded-pill"
+                >
+                  Optimize Resume
+                </button>
+
+                <!-- Loading Indicator -->
+                <div
+                  id="loading"
+                  class="mt-3 d-none text-center"
+                  style="font-size: 1rem; color: #007bff;"
+                >
+                  <div
+                    class="spinner-border text-primary me-2"
+                    role="status"
+                    style="vertical-align: middle;"
+                  >
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  Processing your resume...
+                </div>
+
+                <!-- Optimized Resume Output -->
+                <div
+                  id="output-container"
+                  class="mt-4 p-3 border rounded d-none"
+                  style="background:#f0f8ff;"
+                >
+                  <h5 class="fw-bold">Optimized Resume</h5>
+                  <div id="optimizedResume" class="text-start"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== OPTIMIZER SECTION END ========== -->
+
+    <!-- ========== CONTACT SECTION START (OPTIONAL) ========== -->
+    <section id="contact" class="py-5" style="background-color: #f3f3f3;">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-4">
+          <small class="text-primary" style="font-size:1.5rem;">Contact Us</small>
+          <h2 class="fw-bold mt-2" style="color:#3f396d;">
+            Have Questions?
+          </h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <p class="text-muted mb-4 text-center">
+              Need more help or have suggestions? Feel free to reach out!
+            </p>
+            <!-- Simple contact form -->
+            <form action="mailto:example@gmail.com" method="POST" enctype="text/plain">
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="message"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 fw-bold py-2 rounded-pill"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== CONTACT SECTION END (OPTIONAL) ========== -->
+
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button
+      type="button"
+      class="btn btn-primary btn-lg rounded-pill"
+      id="btn-back-to-top"
+      style="display:none;position:fixed;bottom:40px;right:40px;font-size:1.4rem;"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- ========== FOOTER START ========== -->
+    <footer class="text-center text-white py-4" style="background-color: #3f396d;">
+      <p class="mb-0">
+        &copy; 2025 <strong>Resume Curator</strong> | All Rights Reserved
+      </p>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+
+      // Back to top button
+      const mybutton = document.getElementById("btn-back-to-top");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      mybutton.addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+  </body>
+</html>
