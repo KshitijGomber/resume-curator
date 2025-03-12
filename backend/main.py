@@ -65,4 +65,3 @@ async def process_resume(resume: UploadFile, jobDesc: str = Form(...)):
 
     optimized_resume = generate_resume_improvement(resume_text, jobDesc)
     return {"highlighted_resume": optimized_resume}
-

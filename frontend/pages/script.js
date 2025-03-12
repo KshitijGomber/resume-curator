@@ -22,7 +22,7 @@ document.getElementById("submitBtn").addEventListener("click", async function() 
     outputContainer.classList.add("d-none");
 
     // Send POST request to FastAPI
-    const response = await fetch("http://127.0.0.1:8080/upload", {
+    const response = await fetch("http://127.0.0.1:5438/upload", {
       method: "POST",
       body: formData
     });
