@@ -1,6 +1,8 @@
 # Resume Curator
 
-##Preview Website[https://resume-curator.vercel.app]
+https://resume-curator.vercel.app
+
+
 ## Features:
 ✅ Uploads **PDF & DOCX** resumes  
 ✅ Extracts **key skills** from job descriptions  
