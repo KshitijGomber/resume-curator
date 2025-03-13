@@ -22,5 +22,5 @@ npm run dev
 ## **🚀 Summary**
 ✅ **Full Codebase for Backend & Frontend**  
 ✅ **Supports PDF & DOCX Upload**  
-✅ **Optimizes Resume Using LLM (GPT-4)**  
-✅ **User-Friendly UI with Next.js**  
+✅ **Optimizes Resume Using LLM (Gemini)**  
+✅ **User-Friendly UI 
