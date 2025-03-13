@@ -10,7 +10,7 @@
 ## 📌 Installation & Running
 
 ### **1️⃣ Backend (FastAPI)**
-```sh
+
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
@@ -19,13 +19,8 @@ npm install
 npm run dev
 
 
-
----
-
 ## **🚀 Summary**
 ✅ **Full Codebase for Backend & Frontend**  
 ✅ **Supports PDF & DOCX Upload**  
 ✅ **Optimizes Resume Using LLM (GPT-4)**  
 ✅ **User-Friendly UI with Next.js**  
-
-Would you like any **extra features**, such as **real-time resume rating**? 🚀
